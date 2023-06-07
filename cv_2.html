@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+</head>
+<body>
+    <style>
+        .container{
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            background: rgb(50, 50, 88);
+            border-radius: 30px;
+        }
+        table{
+            border-collapse: collapse;
+            background: blueviolet;
+        }
+        .tbl{
+            border-collapse: separate;
+            background: transparent;
+            margin-right: 20px;
+        }
+        table td, table th{
+            border: 1px solid #ddd;
+            width: 400px;
+        }
+        table th{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+
+        }
+        .etatcivil{
+            width: 600px;
+            height: 220px;
+            /* background: red; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-auto-rows: minmax(100px,auto);
+        }       
+        .cursus{
+            width: 100%;
+            height: 200px;
+            /* background: blue; */
+        }
+        .experience{
+            width: 100%;
+            height: 200px;
+
+            /* background: green; */
+        }
+        .competence{
+            width: 100%;
+            height: 240px;
+            margin-bottom: 20px;
+            /* background: black; */
+        }
+        .loisirs{
+            width: 100%;
+            height: 200px;
+            /* background: blue; */
+        }
+        .tableau{
+            width: 100%;
+            height: 200px;
+            background: violet;
+        }
+        h1{
+            text-align: center;
+            padding-top: 20px;
+            text-decoration:underline;
+        }
+        h2{
+            border: solid 2px black;
+            margin-right: 20px;
+        }
+        /* div{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        } */
+        article{
+            margin-left: 75px;
+        }
+        .photo{
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+        .personne{
+            grid-column: auto;
+            grid-row: auto;
+        }
+        img{
+            width: 150px;
+            height: 125px;
+            margin-left: 40px; 
+            border-radius: 10px;
+             
+        }
+        .photo{
+            width: 240px;
+            height: 125px;
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+        .photo #donne{
+            margin-top: 20px;
+        }
+        .personne{
+            text-align: center;
+            font-size: large;
+            margin-top: 50px;
+        }
+        .personne p{
+            font-size: small;
+            text-align: center;
+            font-style: italic;
+        }
+        .experience_text{
+            font-size: small;
+            margin-left: 50px;
+            line-height: 20px;
+        }
+        .cursus_text{
+            font-size: small;
+            margin-left: 50px;
+            line-height: 20px;
+        }
+        .competence_text{
+            margin-left: 50px;
+        }
+        .loisirs_text{
+            margin-left: 50px;
+        }
+        a img{
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+        }
+    </style>
+    <div class="container">
+        <h1>CURRICULUM VITAE</h1>
+    <div class="etatcivil">
+        <div class="photo">
+            <img src="Sans titre.jpeg" alt="no_image">
+            <div class="donne" id="donne">
+                <label>Contact :</label> 0341060246<br>
+                <label>Email:</label> faniryran01@gmail.com<br>
+                <label>Adresse:</label> Lot IIH2GXYA Nanisana<br>
+                <label>LinkIdn:</label> Faniry RATOLOJANAHARY
+            </div>
+        </div>
+        <div class="personne">
+            RATOLOJANAHARY Fanirisoa<br>
+            Developpeur<br>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus quis quam tempore rerum, vitae dignissimos perspiciatis possimus sapiente et repellat aliquam officiis ipsam debitis voluptates non mollitia labore nesciunt?"</p>
+        </div>
+    </div>
+    <div class="cursus">
+        <div class="cursus_text">
+            <h2>DIPLOMES OBTENUES</h2>
+            2019 - 2022 : MASTER en informatique<br>
+            Institut superieur de l'informatique<br>
+            ************************************<br>
+            2018 - 2019 : Licence en informatique<br>
+            ISIME<br>
+            ************************************<br>
+            2014-2015 : BACC<br>
+            Lycee Le flambeau de Madagascar<br> 
+            ************************************
+        </div>
+    </div>
+    <div class="experience">
+        <div class="experience_text">
+            <h2>EXPERIENCES PROFESSIONNELLES</h2>
+            2021 - 2023 : Freelance<br>
+            Creation maquette et application web<br>
+            -----------------------------------<br>
+            2020 - 2021 : Developpeur d'application web "SOLUMADA"<br>
+            Creation d'une application web pour cacher des informations dans des fichiers PDFs<br>
+            -----------------------------------<br>
+            2019 - 2020 : Stagiare informatique "Polyclinique Ankadifotsy"<br>
+            Informaticien, Creation application desktop pour gestionner les fichiers d'analyse<br>
+            -----------------------------------<br>
+        </div>
+    </div>
+    <div class="competence">
+            <div class="competence_text">
+                <h2>COMPETENCES</h2>
+            <table class="tbl" id="tbl_selecteur">
+                <thead>
+                    <th>LANGAGE</th>
+                    <th>FRAMEWORK</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Javascript</th>
+                        <th>ReactJs, Angular</th>
+                    </tr>
+                    <tr>
+                        <th>PHP</th>
+                        <th>CodeIgniter</th>
+                    </tr>
+                    <tr>
+                        <th>Python</th>
+                        <th>Django</th>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+    </div>
+    <div class="loisirs">
+        <div class="loisirs_text">
+            <h2>LOISIRS</h2>
+            <ul>
+                <li>Football</li>
+                <li>Jeux video</li>
+                <li>Voyage</li>
+                <li>Echecs</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
