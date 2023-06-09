@@ -8,23 +8,27 @@
 </head>
 <body>
     <style>
+        body{
+            background: #68D8D6;
+        }
         .container{
             margin-left: 200px;
             margin-right: 200px;
             margin-top: 10px;
             margin-bottom: 50px;
-            background: rgb(20, 188, 218);
+            /* background: #9CEAEF; */
             border-radius: 30px;
+            border: ridge 2px black;
         }
         table{
             border-collapse: collapse;
             background: transparent;
-            margin-right: 50px;
-            margin-left: 50px;
+            /* margin-right: 50px; */
+            margin-left: 30px;
             margin-bottom: 20px;
         }
         .tbl{
-            border-collapse: separate;
+            /* border-collapse:; */
             background: transparent;
             margin-right: 20px;
         }
@@ -33,6 +37,7 @@
             width: 400px;
         }
         table th{
+            text-decoration: wavy;
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: center;
@@ -92,31 +97,26 @@
         .photo{
             grid-column: 1/2;
             grid-row: 1;
-        }
-        .personne{
-            grid-column: auto;
-            grid-row: auto;
-        }
-        img{
-            width: 150px;
-            height: 150px;
-            margin-left: 40px; 
-            border-radius: 10px;
-             
-        }
-        .photo{
             width: 240px;
             height: 150px;
             margin-left: 20px;
             font-size: 13px;
         }
-        .photo #donne{
-            margin-top: 10px;
-        }
         .personne{
+            grid-column: auto;
+            grid-row: auto;
             text-align: center;
             font-size: large;
             margin-top: 50px;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            margin-left: 40px; 
+            border-radius: 10px;    
+        }
+        .photo #donne{
+            margin-top: 10px;
         }
         .personne p{
             font-size: small;
